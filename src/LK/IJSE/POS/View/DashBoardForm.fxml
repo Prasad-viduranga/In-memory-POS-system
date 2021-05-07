@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contextOfDashBoardForm" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LK.IJSE.POS.Controller.DashBoardFormController">
+   <children>
+      <Label layoutX="125.0" layoutY="14.0" text="POS System">
+         <font>
+            <Font name="AdobePiStd" size="66.0" />
+         </font>
+      </Label>
+      <Separator layoutX="129.0" layoutY="90.0" prefHeight="0.0" prefWidth="338.0" />
+      <ImageView fx:id="btnCustomer" fitHeight="131.0" fitWidth="142.0" layoutX="14.0" layoutY="131.0" onMouseClicked="#loadCustomer" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Asserts/Customer-image.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnItem" fitHeight="135.0" fitWidth="131.0" layoutX="158.0" layoutY="127.0" onMouseClicked="#loadItem" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Asserts/Items-image.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnPlaceOrder" fitHeight="125.0" fitWidth="125.0" layoutX="300.0" layoutY="131.0" onMouseClicked="#loadPlaceOrder" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Asserts/order.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="153.0" fitWidth="142.0" layoutX="438.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Asserts/Order-image.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
